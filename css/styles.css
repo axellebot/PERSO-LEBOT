@@ -1,0 +1,96 @@
+body, html {
+    background-color: #ffffff !important;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+}
+
+#nav-container .tabs {
+    overflow: visible;
+}
+
+.tabs .indicator {
+    background-color: green;
+}
+
+.intro {
+    text-align: center;
+    padding-top: 13%;
+    padding-bottom: 13%;
+    margin-bottom: 50px;
+}
+
+.intro h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.intro h5 {
+    text-transform: uppercase;
+    background-color: #f5f5f5;
+    padding: 10px;
+    color: #333333;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.about .card {
+    text-align: center;
+}
+
+.about .card img {
+    margin-bottom: 15px;
+}
+
+.container .col {
+    margin-bottom: 24px;
+}
+
+.container h5 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.container h6 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.container hr {
+    width: 40px;
+    margin-bottom: 45px;
+}
+
+.gallerie-holder {
+    clear: both;
+    text-align: center;
+}
+
+.gallerie img {
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+.contact-holder {
+    padding-left: 40px;
+    text-align: left;
+}
+
+.contact-holder h6 {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact-holder p {
+    margin-bottom: 30px;
+}
+
+footer {
+    padding-top: 0px;
+}
