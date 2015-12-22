@@ -71,8 +71,9 @@ header {
     margin-bottom: 45px;
 }
 
-.gallerie-holder {
+.gallerie .gallerie-holder {
     clear: both;
+
     text-align: center;
 }
 
@@ -118,3 +119,5 @@ header {
 .parallax-container #logo {
     margin: 50px 0px;
 }
+
+
