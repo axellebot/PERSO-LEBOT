@@ -36,7 +36,6 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
-
 </head>
 <body>
 <!-- Load Facebook SDK for JavaScript -->
@@ -49,23 +48,25 @@
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<header class="header green  z-depth-10">
+
+
+<header class="header green white-text z-depth-10">
     <img src="./images/logo.png" width="160" alt="" class="circle responsive-img">
     <h4>Le Bot</h4>
     <p>Simplement Frais</p>
 </header>
 
-    <div id="nav-container" class="col s12">
-        <ul class="tabs">
-            <li class="tab col s3"><a href="#esprit" class="active green-text">L'Esprit</a></li>
-            <li class="tab col s3"><a href="#produits" class="green-text">Les produits</a></li>
-            <li class="tab col s3"><a href="#paris" class="green-text">Restaurant Paris Montparnasse</a></li>
-            <li class="tab col s3"><a href="#livraison" class="green-text">Livraison</a></li>
-        </ul>
-    </div>
-
+<div id="nav-container" class="col s12">
+    <ul class="tabs">
+        <li class="tab col s3"><a href="#esprit" class="active green-text">L'Esprit</a></li>
+        <li class="tab col s3"><a href="#produits" class="green-text">Les produits</a></li>
+        <li class="tab col s3"><a href="#paris" class="green-text">Restaurant Paris Montparnasse</a></li>
+        <li class="tab col s3"><a href="#livraison" class="green-text">Livraison</a></li>
+    </ul>
+</div>
 
 <div id="esprit" class="col s12">
+    <br>
     <div class="container">
         <h5>L'Esprit</h5>
         <hr>
@@ -74,15 +75,17 @@
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
                         <p style="font-size: large;">
-                        Le Bot est un espace de restauration, une bulle oxygénée dans laquelle nous mangeons simplement
-                        frais. Les produits y sont frais et sélectionnés, de bonne qualité, prêts à consommer, sur place
-                        ou à emporter. On peut y trouver des salades, des sandwiches, des plats cuisinés, des fruits
-                        frais et des cafés.
-                        La plupart de nos produits sont maison et sont préparés dans nos cuisines.
-                        Les restaurants sont modernes avec une décoration simple et relaxante et des couleurs
-                        apaisantes.
-                        Ils sont situés en centre ville, et sont de vrais commerces de quartier.
-                        Allons à la cueillette d'herbes aromatiques le temps d'une pause déjeuner !
+                            Le Bot est un espace de restauration, une bulle oxygénée dans laquelle nous mangeons
+                            simplement
+                            frais. Les produits y sont frais et sélectionnés, de bonne qualité, prêts à consommer, sur
+                            place
+                            ou à emporter. On peut y trouver des salades, des sandwiches, des plats cuisinés, des fruits
+                            frais et des cafés.
+                            La plupart de nos produits sont maison et sont préparés dans nos cuisines.
+                            Les restaurants sont modernes avec une décoration simple et relaxante et des couleurs
+                            apaisantes.
+                            Ils sont situés en centre ville, et sont de vrais commerces de quartier.
+                            Allons à la cueillette d'herbes aromatiques le temps d'une pause déjeuner !
                         </p>
                     </div>
                 </div>
@@ -91,15 +94,15 @@
     </div>
 
 </div>
-
 <div id="produits" class="col s12">
+    <br>
     <div class="container">
         <h5>Le Menu</h5>
         <h6>Trouvez notre PDF ci-dessous</h6>
         <hr>
         <div class="row">
             <div class="col s12 m12 l12">
-                <object data="./rsc/menu.pdf#zoom=70" type="application/pdf" width="100%" height="800"
+                <object data="./rsc/menu.pdf#zoom=100" type="application/pdf" width="100%" height="1000"
                         internalinstanceid="19" title="">
                     Il semblerai que votre navigateur n'arrive pas à lire le menu en pdf.<br>
                     Pas de soucis, il suffit de le télécharger ici :
@@ -111,47 +114,75 @@
     </div>
 </div>
 <div id="paris" class="col s12">
+    <br>
+    <div class="container">
+        <h5>Paris</h5>
+        <h6>Restaurant Paris
+            Montparnasse</h6>
+        <hr>
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Comment venir ?</span>
+                        <p>
+                            A 2 minutes du métro Montparnasse-Bienvenue
+                            <img src="images/metro-4.png"/>
+                            <img src="images/metro-6.png"/>
+                            <img src="images/metro-12.png"/>
+                            <img src="images/metro-13.png"/>
+                            Métro 4 Métro 6 Métro 12 Métro 13. Sortie 2, continuez tout droit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Information</span>
+                        <p>Le Bot vous offre la possibilité de commander vos petits-déjeuners d'affaires ou vos plateaux
+                            repas.
+                            N'hésitez pas à nous contacter pour plus d'information.</p>
+                    </div>
+                    <div class="card-action">
+
+                        <button id="btnCommander" class=" waves-effect waves-light btn" href="#livraison"><i
+                                class="mdi-action-shopping-basket left"></i>Commander
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card white ">
+                    <div class="card-content">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.7510289800134!2d2.317839315846674!3d48.84388750968156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67033265db2f5%3A0xe31d24aad2079635!2sLe+Bot+Simplement+frais!5e0!3m2!1sfr!2sfr!4v1450753114164"
+                                width="100%" height="380px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container gallerie">
         <h5>portfolio</h5>
         <h6>Des images du restaurant</h6>
         <hr>
         <div class="row">
             <div class="col s12 m12 l12 gallerie-holder">
-                <div class="material-placeholder"><img class="materialboxed initialized"
-                                                       src="images/photos/1.jpg">
-                </div>
-                <div class="material-placeholder"><img class="materialboxed initialized"
-                                                       src="images/photos/2.jpg">
-                </div>
-                <div class="material-placeholder"><img class="materialboxed initialized"
-                                                       src="images/photos/3.jpg">
-                </div>
-                <div class="material-placeholder"><img class="materialboxed initialized"
-                                                       src="images/photos/4.jpg">
-                </div>
-                <div class="material-placeholder"><img class="materialboxed initialized"
-                                                       src="images/photos/5.jpg">
-                </div>
-                <div class="material-placeholder"><img class="materialboxed initialized"
-                                                       src="images/photos/6.jpg">
-                </div>
-                <div class="material-placeholder"><img class="materialboxed initialized"
-                                                       src="images/photos/7.jpg">
-                </div>
-                <div class="material-placeholder"><img class="materialboxed initialized"
-                                                       src="images/photos/8.jpg">
-                </div>
-                <div class="material-placeholder"><img class="materialboxed initialized"
-                                                       src="images/photos/9.jpg">
-                </div>
-                <div class="material-placeholder"><img class="materialboxed initialized"
-                                                       src="images/photos/10.jpg">
-                </div>
+                <img class="materialboxed " src="images/photos/1.jpg">
+                <img class="materialboxed " src="images/photos/2.jpg">
+                <img class="materialboxed " src="images/photos/3.jpg">
+                <img class="materialboxed " src="images/photos/4.jpg">
+                <img class="materialboxed " src="images/photos/5.jpg">
+                <img class="materialboxed " src="images/photos/6.jpg">
+                <img class="materialboxed " src="images/photos/7.jpg">
+                <img class="materialboxed " src="images/photos/8.jpg">
+                <img class="materialboxed " src="images/photos/9.jpg">
+                <img class="materialboxed " src="images/photos/10.jpg">
+
             </div>
         </div>
     </div>
 </div>
 <div id="livraison" class="col s12">
+    <br>
     <div class="container livraison">
         <h5>livraison</h5>
         <h6>Le Bot vous offre la possibilité de commander vos petits-déjeuners d'affaires ou vos plateaux
@@ -163,26 +194,37 @@
                     <form class="col s12">
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="first_name" type="text" class="validate">
-                                <label for="first_name">First Name</label>
+                                <i class="material-icons prefix">perm_identity</i>
+                                <input id="first-last_name" type="text" class="validate" required="">
+                                <label for="first-last_name">Nom et Prénom</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name">Last Name</label>
+                                <i class="material-icons prefix">location_on</i>
+                                <textarea class="materialize-textarea" id="adresse" required=""></textarea>
+                                <label for="adresse">Adresse</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="tel" type="tel" class="validate">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="tel" type="tel" class="validate" required="">
                                 <label for="tel">Téléphone</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="email" type="email" class="validate">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email" type="email" class="validate" required="">
                                 <label for="email">E-Mail</label>
                             </div>
                         </div>
-                            <textarea class="materialize-textarea" placeholder="Un Commentaire ?"
-                                      required=""></textarea>
+                        <div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea class="materialize-textarea" id="commentaire" required=""></textarea>
+                                <label for="commentaire">Un Commentaire ?</label>
+                            </div>
+                        </div>
+
+
                         <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                             <i class="mdi-content-send right"></i>
                         </button>
@@ -190,18 +232,18 @@
                 </div>
             </div>
             <div class="col s12 m6 l6 contact-holder">
-                <h6 class="mdi-action-home">Address</h6>
-                <p>Nr. 6, 21 Awesome Street, London, UK</p>
-                <h6 class="mdi-hardware-phone-android">Phone Number</h6>
-                <p>+91 9912776151</p>
-                <h6 class="mdi-action-open-in-browser">Website</h6>
-                <p>le-bot.fr</p>
+                <h6 class="mdi-action-home">Addresse</h6>
+                <p>14 Avenue du Maine, 75015 Paris</p>
+                <h6 class="mdi-content-inbox">Mail</h6>
+                <p>14 Avenue du Maine, 75015 Paris</p>
+                <h6 class="mdi-hardware-phone-android">Numéro de téléphone</h6>
+                <p>+33 1 45 49 48 35</p>
             </div>
         </div>
     </div>
 </div>
-<footer class="page-footer green">
-    <div class="container">
+<footer class="page-footer green darken-3">
+    <div class="container" style="text-align: center;">
         <div class="row">
             <div class="col l4 s12">
                 <h5 class="white-text">Footer Content</h5>
@@ -222,16 +264,27 @@
                      data-layout="button"
                      data-action="like" data-show-faces="false" data-share="true"></div>
             </div>
-            <div class=" col l12 s12   footer-copyright">
-                <div class="container">
-                    © 2015 Copyright Text
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
-            </div>
+
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2015 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
     </div>
 </footer>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.4/js/materialize.min.js"></script>
+
+<!-- jQuery is required by some script -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.4/js/materialize.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnCommander").click(function () {
+            $('ul.tabs').tabs('select_tab', 'livraison');
+        });
+    });
+</script>
 </body>
 </html>

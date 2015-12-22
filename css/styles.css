@@ -1,5 +1,5 @@
 body, html {
-    background-color: #ffffff !important;
+    background-color: #e8f5e9 !important;
 }
 
 header {
@@ -89,8 +89,4 @@ header {
 
 .contact-holder p {
     margin-bottom: 30px;
-}
-
-footer {
-    padding-top: 0px;
 }
