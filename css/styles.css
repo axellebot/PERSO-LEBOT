@@ -13,6 +13,10 @@ header {
     text-align: center;
 }
 
+main {
+    flex: 1 0 auto;
+}
+
 #nav-container .tabs {
     overflow: visible;
 }
@@ -120,13 +124,9 @@ header {
     margin: 50px 0px;
 }
 
-<<<<<<< HEAD
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-=======
-
->>>>>>> refs/remotes/origin/master
