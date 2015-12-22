@@ -90,3 +90,7 @@ header {
 .contact-holder p {
     margin-bottom: 30px;
 }
+
+.card .card-content p {
+    text-align: justify;
+}
