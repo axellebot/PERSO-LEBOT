@@ -118,3 +118,10 @@ header {
 .parallax-container #logo {
     margin: 50px 0px;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
