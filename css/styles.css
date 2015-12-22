@@ -2,6 +2,12 @@ body, html {
     background-color: #e8f5e9 !important;
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 header {
     width: 100%;
     text-align: center;
@@ -93,4 +99,10 @@ header {
 
 .card .card-content p {
     text-align: justify;
+}
+
+.gallerie img {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
 }
