@@ -71,8 +71,9 @@ header {
     margin-bottom: 45px;
 }
 
-.gallerie-holder {
+.gallerie .gallerie-holder {
     clear: both;
+
     text-align: center;
 }
 
@@ -119,9 +120,13 @@ header {
     margin: 50px 0px;
 }
 
+<<<<<<< HEAD
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
+=======
+
+>>>>>>> refs/remotes/origin/master
