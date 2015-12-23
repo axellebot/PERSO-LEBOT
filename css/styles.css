@@ -106,9 +106,9 @@ main {
 }
 
 .gallerie img {
-    width: 300px;
-    height: 300px;
-    padding: 5px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .parallax-container {
