@@ -28,9 +28,9 @@ include_once("header.html");
     <div id="nav-container" class="col s12">
         <ul class="tabs">
             <li class="tab col s3"><a href="#esprit" class="active black-text">L'Esprit</a></li>
-            <li class="tab col s3"><a href="#produits" class="black-text">Les produits</a></li>
-            <li class="tab col s3"><a href="#paris" class="black-text">Restaurant Paris Montparnasse</a></li>
-            <li class="tab col s3"><a href="#livraison" class="black-text">Livraison</a></li>
+            <li class="tab col s3"><a href="#produits" class="black-text">Le Menu</a></li>
+            <li class="tab col s3"><a href="#paris" class="black-text">Le Restaurant</a></li>
+            <li class="tab col s3"><a href="#livraison" class="black-text">La Livraison</a></li>
         </ul>
     </div>
     <div id="esprit" class="col s12">
