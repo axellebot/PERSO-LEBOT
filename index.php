@@ -40,13 +40,13 @@
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 <header id="cover" class="z-depth-1">
     <div class="parallax-container valign-wrapper" style="z-index: 2;">
         <div class="parallax">
@@ -119,15 +119,16 @@
             <h6>Des images de nos produits</h6>
             <hr>
             <div class="row">
-                <div class="col s4"><img class="materialboxed" src="images/photos/produits/1.jpg"></div>
-                <div class="col s4"><img class="materialboxed" src="images/photos/produits/2.jpg"></div>
-                <div class="col s4"><img class="materialboxed" src="images/photos/produits/3.jpg"></div>
-                <div class="col s4"><img class="materialboxed" src="images/photos/produits/4.jpg"></div>
-                <div class="col s4"><img class="materialboxed" src="images/photos/produits/5.jpg"></div>
-                <div class="col s4"><img class="materialboxed" src="images/photos/produits/6.jpg"></div>
-                <div class="col s4"><img class="materialboxed" src="images/photos/produits/7.jpg"></div>
-                <div class="col s4"><img class="materialboxed" src="images/photos/produits/8.jpg"></div>
-                <div class="col s4"><img class="materialboxed" src="images/photos/produits/9.jpg"></div>
+                <?php
+
+
+                $directory = "./images/photos/produits/";
+                foreach (new DirectoryIterator($directory) as $file) {
+                    if ($file->isFile()) {
+                        echo "<div class=\"col s4\"><img class=\"materialboxed  responsive-img\" src=$directory$file></div>";
+                    }
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -171,9 +172,10 @@
                 <div class="col s12 m6">
                     <div class="card white ">
                         <div class="card-content">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.7510289800134!2d2.317839315846674!3d48.84388750968156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67033265db2f5%3A0xe31d24aad2079635!2sLe+Bot+Simplement+frais!5e0!3m2!1sfr!2sfr!4v1450753114164"
-                                    width="100%" height="380px" frameborder="0" style="border:0"
-                                    allowfullscreen></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.7510289800134!2d2.317839315846674!3d48.84388750968156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67033265db2f5%3A0xe31d24aad2079635!2sLe+Bot+Simplement+frais!5e0!3m2!1sfr!2sfr!4v1450753114164"
+                                width="100%" height="380px" frameborder="0" style="border:0"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -184,18 +186,14 @@
             <h6>Des images du restaurant</h6>
             <hr>
             <div class="row">
-                <div class="col s4"><img class="materialboxed  responsive-img" src="images/photos/batiments/1.jpg">
-                </div>
-                <div class="col s4"><img class="materialboxed  responsive-img" src="images/photos/batiments/2.jpg">
-                </div>
-                <div class="col s4"><img class="materialboxed  responsive-img" src="images/photos/batiments/3.jpg">
-                </div>
-                <div class="col s4"><img class="materialboxed  responsive-img" src="images/photos/batiments/4.jpg">
-                </div>
-                <div class="col s4"><img class="materialboxed  responsive-img" src="images/photos/batiments/5.jpg">
-                </div>
-                <div class="col s4"><img class="materialboxed  responsive-img" src="images/photos/batiments/6.jpg">
-                </div>
+                <?php
+                $directory = "./images/photos/batiments/";
+                foreach (new DirectoryIterator($directory) as $file) {
+                    if ($file->isFile()) {
+                        echo "<div class=\"col s4\"><img class=\"materialboxed  responsive-img\" src=$directory$file></div>";
+                    }
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -264,11 +262,11 @@
         </a>
         <ul>
             <li><a class="btn red" href="http://www.yelp.fr/biz/le-bot-paris" target="_blank"><i><img
-                    src="http://yelp.govoluntr.com/yelp.png" width="55px"></i></a></li>
+                            src="http://yelp.govoluntr.com/yelp.png" width="55px"></i></a></li>
             <li><a class="btn green"
                    href="https://www.tripadvisor.fr/Restaurant_Review-g187147-d3681635-Reviews-Le_Bot-Paris_Ile_de_France.html"
                    target="_blank"><i><img
-                    src="http://www.bluebirdbb.com/wp-content/uploads/2014/02/tripadvisor.png" width="40px"></i></a>
+                            src="http://www.bluebirdbb.com/wp-content/uploads/2014/02/tripadvisor.png" width="40px"></i></a>
             </li>
         </ul>
     </div>
@@ -325,7 +323,7 @@
 
         var elmnt = document.getElementById("nav-container");
         var height = window.innerHeight - elmnt.offsetHeight,
-                width = window.innerWidth;
+            width = window.innerWidth;
         document.getElementById("cover").style.height = height + "px";
 
         var _taille = Math.min(height, width) / 2;
