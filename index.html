@@ -311,11 +311,11 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.4/js/materialize.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
+        fullCover();
         $('.parallax').parallax();
         $("#btnCommander").click(function () {
             $('ul.tabs').tabs('select_tab', 'livraison');
         });
-        fullCover();
     });
     window.onresize = resize;
     function resize() {
