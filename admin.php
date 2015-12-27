@@ -6,20 +6,20 @@ include_once("./header.html");
 <div class="container">
     <h5>Admin</h5>
     <h6>Connectez-vous</h6>
+    <hr/>
     <div class="row">
-        <hr/>
-        <div class="col s12 m12 l12">
+        <form class="col s12">
+
             <div class="input-field col s12">
                 <i class="material-icons prefix">vpn_key</i>
-                <input id="psw" type="psw" class="validate" required="">
+                <input id="psw" type="password" class="validate" required=""></input>
                 <label for="psw">Mot de passe</label>
             </div>
-            <div class="col s12 center">
-                <button class="btn waves-effect waves-light brown lighten-3" type="submit" name="action">Submit
-                    <i class="mdi-content-send right"></i>
-                </button>
-            </div>
-        </div>
+            <button class="btn waves-effect waves-light brown lighten-3" type="submit" name="action">
+                Submit
+                <i class="mdi-content-send right"></i>
+            </button>
+        </form>
     </div>
 </div>
 <!-- jQuery is required by some script -->
