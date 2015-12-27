@@ -103,8 +103,8 @@ include_once("header.html");
             <hr>
             <div class="row">
                 <div class="col s12 m6 l6">
-                    <div class="card blue-grey darken-1">
-                        <div class="card-content white-text">
+                    <div class="card brown lighten-4">
+                        <div class="card-content black-text">
                             <span class="card-title">Comment venir ?</span>
                             <p>
                                 A 2 minutes du métro Montparnasse-Bienvenue
@@ -115,8 +115,8 @@ include_once("header.html");
                             </p>
                         </div>
                     </div>
-                    <div class="card blue-grey darken-1">
-                        <div class="card-content white-text">
+                    <div class="card brown lighten-4">
+                        <div class="card-content black-text">
                             <span class="card-title">Information</span>
                             <p>Le Bot vous offre la possibilité de commander vos petit-déjeuners d'affaires ou vos
                                 plateaux
