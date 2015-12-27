@@ -120,10 +120,6 @@ main {
     opacity: .75;
 }
 
-.parallax-container #logo {
-    margin: 50px 0px;
-}
-
 .row {
     display: flex;
     flex-direction: row;
