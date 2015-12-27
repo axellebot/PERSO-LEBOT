@@ -127,6 +127,18 @@ main {
     justify-content: center;
 }
 
-.tabs .tab a {
-    font-size: x-large;
+@media all and (min-device-width: 750px) {
+    .tabs .tab a {
+        font-size: x-large;
+
+    }
 }
+
+@media all and (max-device-width: 750px) {
+    .tabs .tab a {
+        font-size: x-small;
+
+    }
+}
+
+
