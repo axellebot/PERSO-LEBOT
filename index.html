@@ -315,9 +315,15 @@
         $("#btnCommander").click(function () {
             $('ul.tabs').tabs('select_tab', 'livraison');
         });
+        fullCover();
     });
-
-    document.getElementById("cover").style.height = window.innerHeight + "px";
+    window.onresize = resize;
+    function resize() {
+        fullCover();
+    }
+    function fullCover() {
+        document.getElementById("cover").style.height = window.innerHeight + "px";
+    }
 </script>
 </body>
 </html>
