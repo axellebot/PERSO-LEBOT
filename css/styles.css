@@ -126,3 +126,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.tabs .tab a {
+    font-size: x-large;
+}
