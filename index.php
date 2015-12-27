@@ -40,21 +40,25 @@ include_once("header.html");
             <hr>
             <div class="row">
                 <div class="col s12 m12 l12">
-                    <p class="black-text" style="font-size: large;">
-                        Le Bot est un espace de restauration, une bulle oxygénée dans laquelle nous mangeons
-                        simplement
-                        frais. Les produits y sont frais et sélectionnés, de bonne qualité, prêts à consommer,
-                        sur
-                        place
-                        ou à emporter. On peut y trouver des salades, des sandwiches, des plats cuisinés, des
-                        fruits
-                        frais et des cafés.
-                        La plupart de nos produits sont maison et sont préparés dans nos cuisines.
-                        Les restaurants sont modernes avec une décoration simple et relaxante et des couleurs
-                        apaisantes.
-                        Ils sont situés en centre ville, et sont de vrais commerces de quartier.
-                        Allons à la cueillette d'herbes aromatiques le temps d'une pause déjeuner !
-                    </p>
+                    <div class="card brown lighten-4">
+                        <div class="card-content black-text">
+                            <p class="black-text" style="font-size: large;">
+                                Le Bot est un espace de restauration, une bulle oxygénée dans laquelle nous mangeons
+                                simplement
+                                frais. Les produits y sont frais et sélectionnés, de bonne qualité, prêts à consommer,
+                                sur
+                                place
+                                ou à emporter. On peut y trouver des salades, des sandwiches, des plats cuisinés, des
+                                fruits
+                                frais et des cafés.
+                                La plupart de nos produits sont maison et sont préparés dans nos cuisines.
+                                Les restaurants sont modernes avec une décoration simple et relaxante et des couleurs
+                                apaisantes.
+                                Ils sont situés en centre ville, et sont de vrais commerces de quartier.
+                                Allons à la cueillette d'herbes aromatiques le temps d'une pause déjeuner !
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
