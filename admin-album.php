@@ -43,7 +43,7 @@ include_once "admin-nav.html"
                         echo "<img class=\"materialboxed  responsive-img z\" src=$directory$file>";
                         echo "<span class=\"card-title\">$file</span>";
                         echo "</div>";
-                        echo "<div class=\"card-action center\">";
+                        echo "<div class=\"card-action center row\">";
                         echo "<a class=\" waves-effect waves-light btn brown lighten-3\" href=\"#\"><i class=\"material-icons left\">delete</i>Supprimer</a>";
                         echo "</div >";
                         echo "</div >";
@@ -72,7 +72,7 @@ include_once "admin-nav.html"
                         echo "<img class=\"materialboxed  responsive-img z\" src=$directory$file>";
                         echo "<span class=\"card-title\">$file</span>";
                         echo "</div>";
-                        echo "<div class=\"card-action center\">";
+                        echo "<div class=\"card-action center row\">";
                         echo "<a class=\" waves-effect waves-light btn brown lighten-3\" href=\"#\"><i class=\"material-icons left\">delete</i>Supprimer</a>";
                         echo "</div >";
                         echo "</div >";
