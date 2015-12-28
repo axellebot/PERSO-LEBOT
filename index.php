@@ -246,19 +246,8 @@
 <footer class="page-footer grey darken-3">
     <div class="container" style="text-align: center;">
         <div class="row">
-            <div class="col l4 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">
 
-                </p>
-            </div>
-            <div class="col l4 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">
-
-                </p>
-            </div>
-            <div class="col l4 s12">
+            <div class="col l12 s12">
                 <h5 class="white-text">Connectez</h5>
                 <div class="fb-like"
                      data-href="https://www.facebook.com/simplementfrais/"
@@ -266,12 +255,11 @@
                      data-action="like" data-show-faces="false" data-share="true">
                 </div>
             </div>
-
         </div>
     </div>
     <div class="footer-copyright ">
         <div class="container">
-            © 2015 Copyright Axel Le Bot
+            © 2015-2016 Axel LE BOT, All rights reserved.
         </div>
     </div>
 </footer>
