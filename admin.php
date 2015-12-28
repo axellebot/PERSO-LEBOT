@@ -1,29 +1,50 @@
 <?php
-include_once("./header.html");
+session_start();
+include_once "./control/check_session.php";
 ?>
+
+<html>
+<head>
+    <?php
+    include_once "./header.html";
+    ?>
+    <title>Admin</title>
+</head>
+
+
 <body>
+<?php
+include_once "admin-nav.html"
+?>
 
 <div class="container">
-    <h5>Admin</h5>
-    <h6>Connectez-vous</h6>
-    <hr/>
     <div class="row">
-        <form class="col s12">
-
-            <div class="input-field col s12">
-                <i class="material-icons prefix">vpn_key</i>
-                <input id="psw" type="password" class="validate" required=""></input>
-                <label for="psw">Mot de passe</label>
+        <form class="col s12" action='treat-upload_pdf.php' method='POST'>
+            <div class="file-field input-field">
+                <div class="btn brown lighten-3">
+                    <span>File</span>
+                    <input id="fileMenu" type="file" accept="application/pdf">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                </div>
             </div>
-            <button class="btn waves-effect waves-light brown lighten-3" type="submit" name="action">
-                Submit
+            <button class="btn waves-effect waves-light brown lighten-3" type="submit">
+                Valider
                 <i class="mdi-content-send right"></i>
             </button>
         </form>
     </div>
 </div>
-<!-- jQuery is required by some script -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.4/js/materialize.min.js"></script>
+
+<?php
+include_once "./script-footer.html";
+?>
+<script>
+    // Initialize collapse button
+    $(".button-collapse").sideNav();
+    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+    //$('.collapsible').collapsible();
+</script>
 </body>
+</html>

@@ -1,7 +1,10 @@
 <html lang="fr">
-<?php
-include_once("header.html");
-?>
+<head>
+    <?php
+    include_once("header.html");
+    ?>
+    <title>Restaurant Le Bot</title>
+</head>
 <body>
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
@@ -71,7 +74,8 @@ include_once("header.html");
             <hr>
             <div class="row">
                 <div class="col s12 m12 l12">
-                    <object data="./rsc/menu.pdf#zoom=100" type="application/pdf" width="100%" height="1000"
+
+                    <object data="./rsc/menu.pdf#zoom=100" type="application/pdf" width="100%" height="1100"
                             internalinstanceid="19" title="">
                         Il semblerai que votre navigateur n'arrive pas à lire le menu en pdf.<br>
                         Pas de soucis, il suffit de le télécharger ici :
@@ -271,10 +275,9 @@ include_once("header.html");
         </div>
     </div>
 </footer>
-<!-- jQuery is required by some script -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.4/js/materialize.min.js"></script>
+<?php
+include_once "./script-footer.html";
+?>
 <script type="text/javascript" src="./js/script"></script>
 </body>
 </html>
