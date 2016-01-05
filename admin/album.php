@@ -1,6 +1,34 @@
 <?php
 session_start();
 include_once "./control/check_session.php";
+
+
+if (!empty($_FILES[""])) {
+
+}
+if (!empty($_GET)) {
+    if (!empty($_GET["dir"]) && !empty($_GET["name"])) {
+        $directory = $_GET["dir"];
+        $filename = $_GET["nom"];
+
+        switch ($directory) {
+            case "prod":
+                $context = "../assets/img/photos/batiments";
+                break;
+            case "bat":
+                $context = "../assets/img/photos/produits";
+                break;
+        }
+        if (unlink($filename, $context) == 0) {
+            echo "Suppréssion échoué";
+        } else {
+            echo "Suppréssion réussite";
+        }
+    } else {
+        printf("Il manque des informations de suppréssion");
+    }
+}
+
 ?>
 
 <html>
