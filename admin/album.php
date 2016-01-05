@@ -19,7 +19,7 @@ include_once "./include/sidenav.html"
 
 <main>
     <div id="nav-container" class="col s12">
-        <ul class="tabs">
+        <ul class="tabs" style="overflow: visible;">
             <li class="tab col s3"><a href="#produit" class="active black-text">Produits</a></li>
             <li class="tab col s3"><a href="#batiment" class="black-text">Bâtiment</a></li>
         </ul>
