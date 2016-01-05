@@ -4,7 +4,7 @@ session_start();
 if ($_POST = !NULL) {
     if ($_POST["psw"] == "gilles") {
         $_SESSION["psw"] = $_POST["psw"];
-        header("Location:../pdf.php");
+        header("Location:./pdf.php");
     }
 }
 
