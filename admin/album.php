@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "./control/check_session.php";
+//include_once "./control/check_session.php";
 
 
 if (!empty($_FILES[""])) {
@@ -9,23 +9,19 @@ if (!empty($_FILES[""])) {
 if (!empty($_GET)) {
     if (!empty($_GET["dir"]) && !empty($_GET["name"])) {
         $directory = $_GET["dir"];
-        $filename = $_GET["name"];
+        $file = $_GET["name"];
 
         switch ($directory) {
             case "prod":
-                $directory = "../assets/img/photos/batiments/";
+                $path = "../assets/img/photos/produits/";
                 break;
             case "bat":
-                $directory = "../assets/img/photos/produits/";
+                $path = "../assets/img/photos/batiments/";
                 break;
         }
-        $filepath = $directory + $filename;
-        echo $filepath;
-        if (unlink($filepath) == false) {
-            echo "Suppréssion échoué";
-        } else {
-            echo "Suppréssion réussite";
-        }
+        echo $path . $file;
+        unlink($path . "/" . $file) or die("Nop");
+        HEADER("Location:./album.php");
     } else {
         printf("Il manque des informations de suppréssion");
     }
@@ -72,13 +68,13 @@ include_once "./include/sidenav.html"
             <br/>
             <div class="row">
                 <?php
-                $directory = "../assets/img/photos/batiments/";
+                $directory = "../assets/img/photos/produits";
                 foreach (new DirectoryIterator($directory) as $file) {
                     if ($file->isFile()) {
                         echo "<div class=\"col s4\">";
                         echo "<div class=\"card brown lighten-4\">";
                         echo "<div class=\"card-image\" >";
-                        echo "<img class=\"materialboxed  responsive-img z\" src=$directory$file>";
+                        echo "<img class=\"materialboxed  responsive-img z\" src=\"$directory/$file\">";
                         echo "<span class=\"card-title\">$file</span>";
                         echo "</div>";
                         echo "<div class=\"card-action center row\">";
@@ -96,13 +92,13 @@ include_once "./include/sidenav.html"
             <br/>
             <div class="row">
                 <?php
-                $directory = "../assets/img/photos/produits/";
+                $directory = "../assets/img/photos/batiments";
                 foreach (new DirectoryIterator($directory) as $file) {
                     if ($file->isFile()) {
                         echo "<div class=\"col s4\">";
                         echo "<div class=\"card brown lighten-4\">";
                         echo "<div class=\"card-image\" >";
-                        echo "<img class=\"materialboxed  responsive-img z\" src=$directory$file>";
+                        echo "<img class=\"materialboxed  responsive-img z\" src=\"$directory/$file\">";
                         echo "<span class=\"card-title\">$file</span>";
                         echo "</div>";
                         echo "<div class=\"card-action center row\">";

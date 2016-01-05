@@ -77,7 +77,6 @@ main {
 
 .gallerie .gallerie-holder {
     clear: both;
-
     text-align: center;
 }
 
@@ -137,7 +136,6 @@ main {
 @media all and (max-device-width: 750px) {
     .tabs .tab a {
         font-size: x-small;
-
     }
 }
 
