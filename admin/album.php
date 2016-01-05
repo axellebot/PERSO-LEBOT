@@ -1,6 +1,6 @@
 <?php
 session_start();
-//include_once "./control/check_session.php";
+include_once "./control/check_session.php";
 
 
 if (!empty($_FILES[""])) {
