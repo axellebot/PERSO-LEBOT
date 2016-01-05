@@ -13,13 +13,13 @@ if (!empty($_GET)) {
 
         switch ($directory) {
             case "prod":
-                $context = "../assets/img/photos/batiments";
+                $directory = "../assets/img/photos/batiments/";
                 break;
             case "bat":
-                $context = "../assets/img/photos/produits";
+                $directory = "../assets/img/photos/produits/";
                 break;
         }
-        if (unlink($filename, $context) == 0) {
+        if (unlink($directory + $filename) == false) {
             echo "Suppréssion échoué";
         } else {
             echo "Suppréssion réussite";
