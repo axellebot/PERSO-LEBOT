@@ -6,7 +6,7 @@ include_once "./control/check_session.php";
 <html>
 <head>
     <?php
-    include_once "./include/header.html";
+    include_once "../include/header.html"; //Entête du site
     ?>
     <title>Admin</title>
 </head>
@@ -14,7 +14,7 @@ include_once "./control/check_session.php";
 
 <body>
 <?php
-include_once "./include/sidenav.html"
+include_once "./include/sidenav.html" //Menu de navigation
 ?>
 
 <div class="container">
