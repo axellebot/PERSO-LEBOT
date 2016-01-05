@@ -47,7 +47,7 @@ include_once "./include/sidenav.html" //Menu de navigation
 </div>
 
 <?php
-include_once "./script-footer.html";
+include_once "../include/script-footer.html";
 ?>
 <script>
     // Initialize collapse button
