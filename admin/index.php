@@ -1,10 +1,12 @@
 <?php
 session_start();
 
-if ($_POST = !NULL) {
+if ($_POST != NULL) {
     if ($_POST["psw"] == "gilles") {
         $_SESSION["psw"] = $_POST["psw"];
         header("Location:./pdf.php");
+    } else {
+        echo "erreur mdp";
     }
 }
 
@@ -26,7 +28,7 @@ if ($_POST = !NULL) {
 <br/>
 <div class="container">
     <div class="row">
-        <form class="col s12" id='login' action="./index.php" method='POST'>
+        <form class="col s12" id='login' action="./" method='POST'>
             <div class="input-field col s12">
                 <i class="material-icons prefix">vpn_key</i>
                 <input name="psw" id="psw" type="password" class="validate" required=""/>
