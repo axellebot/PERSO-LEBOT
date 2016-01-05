@@ -9,8 +9,8 @@ $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
 
 
 if (empty($_SESSION['psw'])) {
-    HEADER("location:./login-admin.php");
+    HEADER("location:../index.php");
 } else if ($_SESSION["psw"] != "gilles") {
     session_destroy();
-    HEADER("location:./login-admin.php");
+    HEADER("location:../pdf.php");
 }

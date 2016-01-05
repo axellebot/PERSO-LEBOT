@@ -5,7 +5,7 @@ session_start();
 <html>
 <header>
     <?php
-    include_once "./header.html";
+    include_once "../include/header.html";
     ?>
     <title>Administration</title>
 </header>
@@ -20,7 +20,7 @@ session_start();
 <div class="container">
 
     <div class="row">
-        <form class="col s12" id='login' action='control/treat-login.php' method='POST'>
+        <form class="col s12" id='login' action='./control/treat-login.php' method='POST'>
             <div class="input-field col s12">
                 <i class="material-icons prefix">vpn_key</i>
                 <input name="psw" id="psw" type="password" class="validate" required=""/>

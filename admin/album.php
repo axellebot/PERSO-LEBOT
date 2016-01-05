@@ -6,7 +6,7 @@ include_once "./control/check_session.php";
 <html>
 <head>
     <?php
-    include_once "./header.html";
+    include_once "../include/header.html";
     ?>
     <title>Admin</title>
 </head>
@@ -14,7 +14,7 @@ include_once "./control/check_session.php";
 
 <body>
 <?php
-include_once "admin-nav.html"
+include_once "sidenav.html"
 ?>
 
 <main>
@@ -89,7 +89,7 @@ include_once "admin-nav.html"
 </main>
 
 <?php
-include_once "./script-footer.html";
+include_once "../include/script-footer.html";
 ?>
 <script>
     // Initialize collapse button
