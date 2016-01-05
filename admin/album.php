@@ -9,7 +9,7 @@ if (!empty($_FILES[""])) {
 if (!empty($_GET)) {
     if (!empty($_GET["dir"]) && !empty($_GET["name"])) {
         $directory = $_GET["dir"];
-        $filename = $_GET["nom"];
+        $filename = $_GET["name"];
 
         switch ($directory) {
             case "prod":
