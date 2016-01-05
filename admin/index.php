@@ -23,6 +23,9 @@ if ($_POST != NULL) {
 <nav class="brown lighten-3">
     <div class="nav-wrapper">
         <a href="#" class="brand-logo center">Administration</a>
+        <ul class="right">
+            <li class="hide-on-med-and-down"><a href="../"><i class="material-icons">home</i></a></li>
+        </ul>
     </div>
 </nav>
 <br/>
