@@ -14,7 +14,7 @@ include_once "./control/check_session.php";
 
 <body>
 <?php
-include_once "sidenav.html"
+include_once "./include/sidenav.html"
 ?>
 
 <main>
