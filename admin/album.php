@@ -42,7 +42,7 @@ include_once "sidenav.html"
             <br/>
             <div class="row">
                 <?php
-                $directory = "./images/photos/batiments/";
+                $directory = "./img/photos/batiments/";
                 foreach (new DirectoryIterator($directory) as $file) {
                     if ($file->isFile()) {
                         echo "<div class=\"col s4\">";
@@ -66,7 +66,7 @@ include_once "sidenav.html"
             <br/>
             <div class="row">
                 <?php
-                $directory = "./images/photos/produits/";
+                $directory = "./img/photos/produits/";
                 foreach (new DirectoryIterator($directory) as $file) {
                     if ($file->isFile()) {
                         echo "<div class=\"col s4\">";

@@ -19,10 +19,10 @@
 <header id="cover" class="z-depth-1">
     <div class="parallax-container valign-wrapper" style="z-index: 2;">
         <div class="parallax">
-            <img src="images/salad.jpg" style="z-index: 2;">
+            <img src="assets/img/salad.jpg" style="z-index: 2;">
         </div>
         <div class="center-align" style="width:100%;">
-            <img id="logo" src="./images/logo.png" alt="Le Bot - Simplement frais"
+            <img id="logo" src="assets/img/logo.png" alt="Le Bot - Simplement frais"
                  class="circle responsive-img">
         </div>
     </div>
@@ -75,11 +75,11 @@
             <div class="row">
                 <div class="col s12 m12 l12">
 
-                    <object data="./rsc/menu.pdf#zoom=100" type="application/pdf" width="100%" height="1100"
+                    <object data="assets/pdf/menu.pdf#zoom=100" type="application/pdf" width="100%" height="1100"
                             internalinstanceid="19" title="">
                         Il semblerai que votre navigateur n'arrive pas à lire le menu en pdf.<br>
                         Pas de soucis, il suffit de le télécharger ici :
-                        <a href="./rsc/menu.pdf">menu.pdf</a>
+                        <a href="assets/pdf/menu.pdf">menu.pdf</a>
                     </object>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                 <?php
 
 
-                $directory = "./images/photos/produits/";
+                $directory = "./img/photos/produits/";
                 foreach (new DirectoryIterator($directory) as $file) {
                     if ($file->isFile()) {
                         echo "<div class=\"col s4\"><img class=\"materialboxed  responsive-img\" src=$directory$file></div>";
@@ -116,10 +116,10 @@
                             <span class="card-title">Comment venir ?</span>
                             <p>
                                 A 2 minutes du métro Montparnasse-Bienvenue
-                                <img src="images/metro-4.png"/>
-                                <img src="images/metro-6.png"/>
-                                <img src="images/metro-12.png"/>
-                                <img src="images/metro-13.png"/> Sortie 2, continuez tout droit.
+                                <img src="assets/img/metro-4.png"/>
+                                <img src="assets/img/metro-6.png"/>
+                                <img src="assets/img/metro-12.png"/>
+                                <img src="assets/img/metro-13.png"/> Sortie 2, continuez tout droit.
                             </p>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
             <hr>
             <div class="row">
                 <?php
-                $directory = "./images/photos/batiments/";
+                $directory = "./img/photos/batiments/";
                 foreach (new DirectoryIterator($directory) as $file) {
                     if ($file->isFile()) {
                         echo "<div class=\"col s4\"><img class=\"materialboxed  responsive-img\" src=$directory$file></div>";

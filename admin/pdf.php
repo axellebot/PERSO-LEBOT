@@ -36,11 +36,11 @@ include_once "./include/sidenav.html"
         </form>
         <div class="col s12 m12 l12">
 
-            <object data="../rsc/menu.pdf#zoom=100" type="application/pdf" width="100%" height="1100"
+            <object data="../assets/pdf/menu.pdf#zoom=100" type="application/pdf" width="100%" height="1100"
                     internalinstanceid="19" title="">
                 Il semblerai que votre navigateur n'arrive pas à lire le menu en pdf.<br>
                 Pas de soucis, il suffit de le télécharger ici :
-                <a href="../rsc/menu.pdf">menu.pdf</a>
+                <a href="../assets/pdf/menu.pdf">menu.pdf</a>
             </object>
         </div>
     </div>
