@@ -19,7 +19,9 @@ if (!empty($_GET)) {
                 $directory = "../assets/img/photos/produits/";
                 break;
         }
-        if (unlink($directory + $filename) == false) {
+        $filepath = $directory + $filename;
+        echo $filepath;
+        if (unlink($filepath) == false) {
             echo "Suppréssion échoué";
         } else {
             echo "Suppréssion réussite";
