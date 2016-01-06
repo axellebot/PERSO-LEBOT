@@ -14,9 +14,8 @@ if ($_POST != NULL) {
 <html>
 <header>
     <?php
-    include_once "../include/header.html";
+    include_once "./include/header.html";
     ?>
-    <title>Administration</title>
 </header>
 <body>
 

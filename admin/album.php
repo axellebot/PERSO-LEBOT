@@ -32,9 +32,8 @@ if (!empty($_GET)) {
 <html>
 <head>
     <?php
-    include_once "../include/header.html";
+    include_once "./include/header.html";//entete admin
     ?>
-    <title>Admin</title>
 </head>
 
 

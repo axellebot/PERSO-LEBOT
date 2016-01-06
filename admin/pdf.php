@@ -2,27 +2,15 @@
 session_start();
 //include_once "./control/check_session.php";
 
-if (!empty($_FILES["pdfFile"])) {
-    echo $_FILES["pdfFile"]["name"];
-    $target_dir = "../assets/pdf/";
-    $target_file = $target_dir . "menu.pdf";
-    $imageFileType = pathinfo(basename($_FILES["pdfFile"]["name"]), PATHINFO_EXTENSION);
+if (isset($_FILES['fileToUpload'])) {
+    echo "submit";
+    print_r($_FILES["fileToUpload"]["name"]);
+    $uploads_dir = "../assets/pdf/";
 
-// Allow certain file formats
-    if ($imageFileType != "pdf") {
-        echo "Sorry, only PDF files are allowed.";
-        $uploadOk = 0;
-    }
-// Check if $uploadOk is set to 0 by an error
-    if ($uploadOk == 0) {
-        echo "Sorry, your file was not uploaded.";
-// if everything is ok, try to upload file
-    } else {
-        if (move_uploaded_file($_FILES["pdfFile"]["name"], $target_file)) {
-            echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
-        } else {
-            echo "Sorry, there was an error uploading your file.";
-        }
+    if ($_FILES["fileToUpload"]["error"] == UPLOAD_ERR_OK) {
+        $tmp_name = $_FILES["fileToUpload"]["tmp_name"];
+        $name = "menu.pdf";
+        move_uploaded_file($tmp_name, "$uploads_dir/$name");
     }
 }
 ?>
@@ -30,9 +18,8 @@ if (!empty($_FILES["pdfFile"])) {
 <html>
 <head>
     <?php
-    include_once "../include/header.html"; //Entête du site
+    include_once "./include/header.html"; //entete admin
     ?>
-    <title>Admin</title>
 </head>
 
 
@@ -43,17 +30,17 @@ include_once "./include/sidenav.html" //Menu de navigation
 
 <div class="container">
     <div class="row">
-        <form class="col s12" action='./pdf.php' method='POST'>
+        <form class="col s12" enctype="multipart/form-data" action='./pdf.php' method='POST'>
             <div class="file-field input-field">
                 <div class="btn brown lighten-3">
                     <span>File</span>
-                    <input name="pdfFile" id="pdfFile" type="file" accept="application/pdf">
+                    <input type="file" name="fileToUpload" accept="application/pdf">
                 </div>
                 <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                    <input class="file-path validate" type="text" placeholder="Upload one file">
                 </div>
             </div>
-            <button class="btn waves-effect waves-light brown lighten-3" type="submit">
+            <button class="btn waves-effect waves-light brown lighten-3">
                 Valider
                 <i class="mdi-content-send right"></i>
             </button>
