@@ -218,7 +218,7 @@
                     </div>
                 </div>
                 <div class="col s12 m6 l6 contact-holder">
-                    <h6 class="mdi-action-home">Addresse</h6>
+                    <h6 class="mdi-action-home">Adresse</h6>
                     <p>14 Avenue du Maine, 75015 Paris</p>
                     <h6 class="mdi-content-inbox">Mail</h6>
                     <p>14 Avenue du Maine, 75015 Paris</p>
