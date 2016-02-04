@@ -10,7 +10,11 @@ if (isset($_FILES['fileToUpload'])) {
         echo "test";
         $tmp_name = $_FILES["fileToUpload"]["tmp_name"];
         $name = "menu.pdf";
-        move_uploaded_file($tmp_name, "$uploads_dir$name");
+        if (move_uploaded_file($tmp_name, "$uploads_dir$name")) {
+            echo "success";
+        } else {
+            echo "failed";
+        }
     }
 }
 ?>
