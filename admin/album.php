@@ -7,7 +7,6 @@ $productDirectory = "../assets/img/photos/produits/";
 $buildingDirectory = "../assets/img/photos/batiments/";
 
 if (!empty($_FILES[""])) {
-
 }
 if (!empty($_GET)) {
     if (!empty($_GET["dir"]) && !empty($_GET["name"])) {
@@ -26,8 +25,7 @@ if (!empty($_GET)) {
         if (file_exists($path . $file)) {
             printf("File exist");
             if (!unlink($path . $file)) {
-                printf("Error deleting $file\n");
-                printf($path . $file . "\n");
+                printf("Error deleting $path$file\n");
             } else {
                 printf("Deleted $file\n");
                 HEADER("Location:./album.php");

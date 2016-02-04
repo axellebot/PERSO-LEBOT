@@ -3,14 +3,13 @@ session_start();
 include_once "./control/check_session.php";
 
 if (isset($_FILES['fileToUpload'])) {
-    echo "submit";
     print_r($_FILES["fileToUpload"]["name"]);
     $uploads_dir = "../assets/pdf/";
 
     if ($_FILES["fileToUpload"]["error"] == UPLOAD_ERR_OK) {
         $tmp_name = $_FILES["fileToUpload"]["tmp_name"];
         $name = "menu.pdf";
-        move_uploaded_file($tmp_name, "$uploads_dir/$name");
+        move_uploaded_file($tmp_name, "$uploads_dir$name");
     }
 }
 ?>
