@@ -4,14 +4,14 @@ include_once "./control/check_session.php";
 
 if (isset($_FILES['fileToUpload'])) {
     print_r($_FILES["fileToUpload"]["name"]);
-    $uploads_dir = "../assets/pdf/";
+    $uploads_dir = "/assets/pdf/";
 
     if ($_FILES["fileToUpload"]["error"] == UPLOAD_ERR_OK) {
         echo "test";
         $tmp_name = $_FILES["fileToUpload"]["tmp_name"];
-        $name = "menu.pdf";
-        if (move_uploaded_file($tmp_name, "$uploads_dir$name")) {
-            echo "success upload of $tmp_name to $uploads_dir$name";
+        $file_name = "menu.pdf";
+        if (move_uploaded_file($tmp_name, "$uploads_dir$file_name")) {
+            echo "success upload of $tmp_name to $uploads_dir$file_name";
         } else {
             echo "failed";
         }
