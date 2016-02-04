@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+if (!empty($_SESSION['psw'])) {
+    HEADER("location:./pdf.php");
+}
+
 if ($_POST != NULL) {
     if ($_POST["psw"] == "gilles") {
         $_SESSION["psw"] = $_POST["psw"];
