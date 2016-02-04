@@ -1,7 +1,6 @@
 <?php
 session_start();
-//include_once "./control/check_session.php";
-
+include_once "./control/check_session.php";
 
 $productDirectory = "../assets/img/photos/produits/";
 $buildingDirectory = "../assets/img/photos/batiments/";
