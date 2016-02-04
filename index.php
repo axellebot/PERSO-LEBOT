@@ -1,7 +1,7 @@
 <html lang="fr">
 <head>
     <?php
-    include_once("/include/head.html");
+    include_once("./include/head.html");
     ?>
     <title>Restaurant Le Bot</title>
 </head>
