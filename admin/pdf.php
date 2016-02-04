@@ -18,13 +18,13 @@ if (isset($_FILES['fileToUpload'])) {
 <html>
 <head>
     <?php
-    include_once "./include/header.html"; //entete admin
+    include_once "include/header.html"; //entete admin
     ?>
 </head>
 
 <body>
 <?php
-include_once "/admin/include/sidenav.html" //Menu de navigation
+include_once "include/sidenav.html" //Menu de navigation
 ?>
 
 <div class="container">

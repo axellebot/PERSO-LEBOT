@@ -32,14 +32,14 @@ if (!empty($_GET)) {
 <html>
 <head>
     <?php
-    include_once "/admin/include/header.html";//entete admin
+    include_once "include/header.html";//entete admin
     ?>
 </head>
 
 
 <body>
 <?php
-include_once "/admin/include/sidenav.html"
+include_once "include/sidenav.html"
 ?>
 
 <main>
