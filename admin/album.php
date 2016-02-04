@@ -1,7 +1,10 @@
 <?php
 session_start();
-include_once "./control/check_session.php";
+//include_once "./control/check_session.php";
 
+
+$productDirectory = "../assets/img/photos/produits/";
+$buildingDirectory = "../assets/img/photos/batiments/";
 
 if (!empty($_FILES[""])) {
 
@@ -13,10 +16,10 @@ if (!empty($_GET)) {
 
         switch ($directory) {
             case "prod":
-                $path = "../assets/img/photos/produits/";
+                $path = $productDirectory;
                 break;
             case "bat":
-                $path = "../assets/img/photos/batiments/";
+                $path = $buildingDirectory;
                 break;
         }
         printf("file : $path$file\n");
@@ -77,13 +80,12 @@ include_once "include/sidenav.html"
             <br/>
             <div class="row">
                 <?php
-                $directory = "../assets/img/photos/produits";
-                foreach (new DirectoryIterator($directory) as $file) {
+                foreach (new DirectoryIterator($productDirectory) as $file) {
                     if ($file->isFile()) {
                         echo "<div class=\"col s4\">";
                         echo "<div class=\"card brown lighten-4\">";
                         echo "<div class=\"card-image\" >";
-                        echo "<img class=\"materialboxed  responsive-img z\" src=\"$directory/$file\">";
+                        echo "<img class=\"materialboxed  responsive-img z\" src=\"$productDirectory$file\">";
                         echo "<span class=\"card-title\">$file</span>";
                         echo "</div>";
                         echo "<div class=\"card-action center row\">";
@@ -101,13 +103,12 @@ include_once "include/sidenav.html"
             <br/>
             <div class="row">
                 <?php
-                $directory = "../assets/img/photos/batiments";
-                foreach (new DirectoryIterator($directory) as $file) {
+                foreach (new DirectoryIterator($buildingDirectory) as $file) {
                     if ($file->isFile()) {
                         echo "<div class=\"col s4\">";
                         echo "<div class=\"card brown lighten-4\">";
                         echo "<div class=\"card-image\" >";
-                        echo "<img class=\"materialboxed  responsive-img z\" src=\"$directory/$file\">";
+                        echo "<img class=\"materialboxed  responsive-img z\" src=\"$buildingDirectory$file\">";
                         echo "<span class=\"card-title\">$file</span>";
                         echo "</div>";
                         echo "<div class=\"card-action center row\">";
