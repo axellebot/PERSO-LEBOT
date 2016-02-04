@@ -20,7 +20,11 @@ if (!empty($_GET)) {
                 break;
         }
         echo $path . $file;
-        unlink($path . $file) or die("Nop");
+        if (!unlink($path . $file)) {
+            echo("Error deleting $file");
+        } else {
+            echo("Deleted $file");
+        }
         HEADER("Location:./album.php");
     } else {
         printf("Il manque des informations de suppréssion");
