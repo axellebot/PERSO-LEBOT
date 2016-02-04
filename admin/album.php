@@ -21,6 +21,7 @@ if (!empty($_GET)) {
         }
         echo "file : $path$file";
         if (file_exists($path . $file)) {
+            echo "File exist";
             if (!unlink($path . $file)) {
                 echo("Error deleting $file");
                 echo $path . $file;
@@ -28,6 +29,8 @@ if (!empty($_GET)) {
                 echo("Deleted $file");
                 HEADER("Location:./album.php");
             }
+        } else {
+            echo "File doesn't exist";
         }
     } else {
         printf("Il manque des informations de suppréssion");
