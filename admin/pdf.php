@@ -13,7 +13,7 @@ if (isset($_FILES['fileToUpload'])) {
         if (move_uploaded_file($tmp_name, "$uploads_dir$file_name")) {
             echo "success upload of $tmp_name to $uploads_dir$file_name";
         } else {
-            echo "failed";
+            echo "failed of $tmp_name to $uploads_dir$file_name";
         }
     }
 }
