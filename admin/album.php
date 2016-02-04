@@ -19,7 +19,7 @@ if (!empty($_GET)) {
                 $path = "assets/img/photos/batiments/";
                 break;
         }
-        echo "file : $path$file";
+        printf("file : $path$file");
         if (file_exists($path . $file)) {
             printf("File exist");
             if (!unlink($path . $file)) {
