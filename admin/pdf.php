@@ -3,7 +3,7 @@ session_start();
 include_once "./control/check_session.php";
 
 
-define("UPLOAD_DIR", "/assets/pdf/");
+define("UPLOAD_DIR", "../assets/pdf/");
 
 if (!empty($_FILES["fileToUpload"])) {
     $myFile = $_FILES["fileToUpload"];
@@ -14,8 +14,8 @@ if (!empty($_FILES["fileToUpload"])) {
     }
 
     // preserve file from temporary directory
-    $success = move_uploaded_file($myFile["tmp_name"],
-        UPLOAD_DIR . "menu.pdf");
+    $success = move_uploaded_file($myFile["tmp_name"], UPLOAD_DIR . "menu.pdf");
+    print_r($myFile);
     if (!$success) {
         echo "<p>Unable to save file.</p>";
         exit;
