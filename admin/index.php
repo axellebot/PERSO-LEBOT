@@ -49,7 +49,7 @@ if ($_POST != NULL) {
 </div>
 
 <?php
-include_once "/include/script-footer.html";
+include_once('../include/script-footer.html');
 ?>
 </body>
 </html>
