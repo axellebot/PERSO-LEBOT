@@ -23,7 +23,7 @@ if (!empty($_GET)) {
                 break;
         }
         printf("file : $path$file\n");
-        if (file_exists($path . $file . "\n")) {
+        if (file_exists($path . $file)) {
             printf("File exist");
             if (!unlink($path . $file)) {
                 printf("Error deleting $file\n");
