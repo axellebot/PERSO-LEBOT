@@ -14,7 +14,7 @@ if ($_POST != NULL) {
 <html>
 <header>
     <?php
-    include_once "./include/header.html";
+    include_once "/admin/include/header.html";
     ?>
 </header>
 <body>
@@ -23,14 +23,14 @@ if ($_POST != NULL) {
     <div class="nav-wrapper">
         <a href="#" class="brand-logo center">Administration</a>
         <ul class="right">
-            <li class="hide-on-med-and-down"><a href="../"><i class="material-icons">home</i></a></li>
+            <li class="hide-on-med-and-down"><a href="/"><i class="material-icons">home</i></a></li>
         </ul>
     </div>
 </nav>
 <br/>
 <div class="container">
     <div class="row">
-        <form class="col s12" id='login' action="./" method='POST'>
+        <form class="col s12" id='login' action="/admin/" method='POST'>
             <div class="input-field col s12">
                 <i class="material-icons prefix">vpn_key</i>
                 <input name="psw" id="psw" type="password" class="validate" required=""/>
@@ -49,7 +49,7 @@ if ($_POST != NULL) {
 </div>
 
 <?php
-include_once('../include/script-footer.html');
+include_once('/include/script-footer.html');
 ?>
 </body>
 </html>

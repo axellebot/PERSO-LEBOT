@@ -32,7 +32,7 @@ if (!empty($_GET)) {
 <html>
 <head>
     <?php
-    include_once "/include/header.html";//entete admin
+    include_once "/admin/include/header.html";//entete admin
     ?>
 </head>
 
@@ -112,7 +112,6 @@ include_once "/admin/include/sidenav.html"
     </div>
 
 </main>
-
 <?php
 include_once "/include/script-footer.html";
 ?>

@@ -22,10 +22,9 @@ if (isset($_FILES['fileToUpload'])) {
     ?>
 </head>
 
-
 <body>
 <?php
-include_once "./include/sidenav.html" //Menu de navigation
+include_once "/admin/include/sidenav.html" //Menu de navigation
 ?>
 
 <div class="container">
@@ -56,9 +55,8 @@ include_once "./include/sidenav.html" //Menu de navigation
         </div>
     </div>
 </div>
-
 <?php
-include_once "../include/script-footer.html";
+include_once('/include/script-footer.html');
 ?>
 <script>
     // Initialize collapse button

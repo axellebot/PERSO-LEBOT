@@ -1,7 +1,7 @@
 <html lang="fr">
 <head>
     <?php
-    include_once("./include/head.html");
+    include_once("/include/head.html");
     ?>
     <title>Restaurant Le Bot</title>
 </head>
@@ -262,7 +262,7 @@
     </div>
 </footer>
 <?php
-include_once "./include/script-footer.html";
+include_once "/include/script-footer.html";
 ?>
 <script type="text/javascript" src="./js/script"></script>
 </body>
