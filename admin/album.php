@@ -19,13 +19,13 @@ if (!empty($_GET)) {
                 $path = "/assets/img/photos/batiments/";
                 break;
         }
-        echo $path . $file;
         if (!unlink($path . $file)) {
             echo("Error deleting $file");
+            echo $path . $file;
+            HEADER("Location:./album.php");
         } else {
             echo("Deleted $file");
         }
-        HEADER("Location:./album.php");
     } else {
         printf("Il manque des informations de suppréssion");
     }
@@ -81,7 +81,7 @@ include_once "include/sidenav.html"
                         echo "<span class=\"card-title\">$file</span>";
                         echo "</div>";
                         echo "<div class=\"card-action center row\">";
-                        echo "<a class=\" waves-effect waves-light btn brown lighten-3 \" href=\"./album.php?dir=prod&name=$file#produit\"><i class=\"material-icons\">delete</i></a>";
+                        echo "<a class=\" waves-effect waves-light btn brown lighten-3 \" href=\"./album.php?dir=prod&name=$file\"><i class=\"material-icons\">delete</i></a>";
                         echo "</div >";
                         echo "</div >";
                         echo "</div >";
@@ -105,7 +105,7 @@ include_once "include/sidenav.html"
                         echo "<span class=\"card-title\">$file</span>";
                         echo "</div>";
                         echo "<div class=\"card-action center row\">";
-                        echo "<a class=\" waves-effect waves-light btn brown lighten-3\" href=\"./album.php?dir=bat&name=$file#batiment\"><i class=\"material-icons\">delete</i></a>";
+                        echo "<a class=\" waves-effect waves-light btn brown lighten-3\" href=\"./album.php?dir=bat&name=$file\"><i class=\"material-icons\">delete</i></a>";
                         echo "</div >";
                         echo "</div >";
                         echo "</div >";
