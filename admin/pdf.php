@@ -7,6 +7,7 @@ if (isset($_FILES['fileToUpload'])) {
     $uploads_dir = "../assets/pdf/";
 
     if ($_FILES["fileToUpload"]["error"] == UPLOAD_ERR_OK) {
+        echo "test";
         $tmp_name = $_FILES["fileToUpload"]["tmp_name"];
         $name = "menu.pdf";
         move_uploaded_file($tmp_name, "$uploads_dir$name");
