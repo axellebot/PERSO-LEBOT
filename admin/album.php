@@ -19,8 +19,8 @@ if (!empty($_GET)) {
                 $path = "assets/img/photos/batiments/";
                 break;
         }
-        echo "file : $directory$file";
-        if (file_exists($directory . $file)) {
+        echo "file : $path$file";
+        if (file_exists($path . $file)) {
             if (!unlink($path . $file)) {
                 echo("Error deleting $file");
                 echo $path . $file;
