@@ -113,7 +113,7 @@ include_once "include/sidenav.html"
 
 </main>
 <?php
-include_once "/include/script-footer.html";
+include_once "../include/script-footer.html";
 ?>
 <script>
     // Initialize collapse button
