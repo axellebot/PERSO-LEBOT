@@ -13,18 +13,20 @@ if (!empty($_GET)) {
 
         switch ($directory) {
             case "prod":
-                $path = "/assets/img/photos/produits/";
+                $path = "assets/img/photos/produits/";
                 break;
             case "bat":
-                $path = "/assets/img/photos/batiments/";
+                $path = "assets/img/photos/batiments/";
                 break;
         }
-        if (!unlink($path . $file)) {
-            echo("Error deleting $file");
-            echo $path . $file;
-        } else {
-            echo("Deleted $file");
-            // HEADER("Location:./album.php");
+        if (file_exists($directory . $file)) {
+            if (!unlink($path . $file)) {
+                echo("Error deleting $file");
+                echo $path . $file;
+            } else {
+                echo("Deleted $file");
+                HEADER("Location:./album.php");
+            }
         }
     } else {
         printf("Il manque des informations de suppréssion");
