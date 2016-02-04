@@ -13,6 +13,14 @@ if (!empty($_FILES["fileToUpload"])) {
         exit;
     }
 
+    // don't overwrite an existing file
+    $i = 0;
+    $parts = pathinfo("menu.pdf");
+    while (file_exists(UPLOAD_DIR . $name)) {
+        $i++;
+        $name = $parts["filename"] . "-" . $i . "." . $parts["extension"];
+    }
+
     // preserve file from temporary directory
     $success = move_uploaded_file($myFile["tmp_name"],
         UPLOAD_DIR . "menu.pdf");
