@@ -262,7 +262,7 @@
     </div>
 </footer>
 <?php
-include_once "/include/script-footer.html";
+include_once "./include/script-footer.html";
 ?>
 <script type="text/javascript" src="./js/script"></script>
 </body>
