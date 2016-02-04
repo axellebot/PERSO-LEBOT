@@ -11,7 +11,7 @@ if (isset($_FILES['fileToUpload'])) {
         $tmp_name = $_FILES["fileToUpload"]["tmp_name"];
         $name = "menu.pdf";
         if (move_uploaded_file($tmp_name, "$uploads_dir$name")) {
-            echo "success";
+            echo "success upload of $tmp_name to $uploads_dir$name";
         } else {
             echo "failed";
         }
