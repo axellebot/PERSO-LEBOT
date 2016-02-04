@@ -13,14 +13,14 @@ if (!empty($_GET)) {
 
         switch ($directory) {
             case "prod":
-                $path = "../assets/img/photos/produits/";
+                $path = "/assets/img/photos/produits/";
                 break;
             case "bat":
-                $path = "../assets/img/photos/batiments/";
+                $path = "/assets/img/photos/batiments/";
                 break;
         }
         echo $path . $file;
-        unlink($path . "/" . $file) or die("Nop");
+        unlink($path . $file) or die("Nop");
         HEADER("Location:./album.php");
     } else {
         printf("Il manque des informations de suppréssion");
@@ -32,14 +32,14 @@ if (!empty($_GET)) {
 <html>
 <head>
     <?php
-    include_once "./include/header.html";//entete admin
+    include_once "/include/header.html";//entete admin
     ?>
 </head>
 
 
 <body>
 <?php
-include_once "./include/sidenav.html"
+include_once "/admin/include/sidenav.html"
 ?>
 
 <main>
@@ -67,7 +67,7 @@ include_once "./include/sidenav.html"
             <br/>
             <div class="row">
                 <?php
-                $directory = "../assets/img/photos/produits";
+                $directory = "/assets/img/photos/produits";
                 foreach (new DirectoryIterator($directory) as $file) {
                     if ($file->isFile()) {
                         echo "<div class=\"col s4\">";
@@ -91,7 +91,7 @@ include_once "./include/sidenav.html"
             <br/>
             <div class="row">
                 <?php
-                $directory = "../assets/img/photos/batiments";
+                $directory = "/assets/img/photos/batiments";
                 foreach (new DirectoryIterator($directory) as $file) {
                     if ($file->isFile()) {
                         echo "<div class=\"col s4\">";
@@ -114,7 +114,7 @@ include_once "./include/sidenav.html"
 </main>
 
 <?php
-include_once "../include/script-footer.html";
+include_once "/include/script-footer.html";
 ?>
 <script>
     // Initialize collapse button

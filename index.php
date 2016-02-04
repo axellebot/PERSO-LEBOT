@@ -1,7 +1,7 @@
 <html lang="fr">
 <head>
     <?php
-    include_once("./include/header.html");
+    include_once("./include/head.html");
     ?>
     <title>Restaurant Le Bot</title>
 </head>
@@ -90,8 +90,6 @@
             <hr>
             <div class="row">
                 <?php
-
-
                 $directory = "./assets/img/photos/produits/";
                 foreach (new DirectoryIterator($directory) as $file) {
                     if ($file->isFile()) {
@@ -221,7 +219,7 @@
                     <h6 class="mdi-action-home">Adresse</h6>
                     <p>14 Avenue du Maine, 75015 Paris</p>
                     <h6 class="mdi-content-inbox">Mail</h6>
-                    <p>14 Avenue du Maine, 75015 Paris</p>
+                    <p>gilles.lebot@hotmail.fr</p>
                     <h6 class="mdi-hardware-phone-android">Numéro de téléphone</h6>
                     <p>+33 1 45 49 48 35</p>
                 </div>
