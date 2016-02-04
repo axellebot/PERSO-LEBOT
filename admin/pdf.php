@@ -2,21 +2,27 @@
 session_start();
 include_once "./control/check_session.php";
 
-if (isset($_FILES['fileToUpload'])) {
-    print_r($_FILES["fileToUpload"]["name"]);
-    $uploads_dir = "/assets/pdf";
 
-    if ($_FILES["fileToUpload"]["error"] == UPLOAD_ERR_OK) {
-        echo "test";
-        $tmp_name = $_FILES["fileToUpload"]["tmp_name"];
-        $file_name = $_FILES["fileToUpload"]["name"];
+define("UPLOAD_DIR", "/assets/pdf/");
 
-        if (move_uploaded_file($tmp_name, "$uploads_dir/$file_name")) {
-            echo "success upload of $tmp_name to $uploads_dir$file_name";
-        } else {
-            echo "failed upload of $tmp_name to $uploads_dir/$file_name";
-        }
+if (!empty($_FILES["fileToUpload"])) {
+    $myFile = $_FILES["fileToUpload"];
+
+    if ($myFile["error"] !== UPLOAD_ERR_OK) {
+        echo "<p>An error occurred.</p>";
+        exit;
     }
+
+    // preserve file from temporary directory
+    $success = move_uploaded_file($myFile["tmp_name"],
+        UPLOAD_DIR . "menu.pdf");
+    if (!$success) {
+        echo "<p>Unable to save file.</p>";
+        exit;
+    }
+
+    // set proper permissions on the new file
+    chmod(UPLOAD_DIR . "menu.pdf", 0644);
 }
 ?>
 
