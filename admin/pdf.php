@@ -4,7 +4,7 @@ include_once "./control/check_session.php";
 
 if (isset($_FILES['fileToUpload'])) {
     print_r($_FILES["fileToUpload"]["name"]);
-    $uploads_dir = "/assets/pdf/";
+    $uploads_dir = "../assets/pdf/";
 
     if ($_FILES["fileToUpload"]["error"] == UPLOAD_ERR_OK) {
         echo "test";
