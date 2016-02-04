@@ -15,7 +15,7 @@ if (!empty($_FILES["fileToUpload"])) {
 
     // preserve file from temporary directory
     $success = move_uploaded_file($myFile["tmp_name"], UPLOAD_DIR . "menu.pdf");
-    print_r($myFile);
+    //print_r($myFile);
     if (!$success) {
         echo "<p>Unable to save file.</p>";
         exit;
