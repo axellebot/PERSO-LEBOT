@@ -19,21 +19,21 @@ if (!empty($_GET)) {
                 $path = "assets/img/photos/batiments/";
                 break;
         }
-        printf("file : $path$file");
-        if (file_exists($path . $file)) {
+        printf("file : $path$file\n");
+        if (file_exists($path . $file . "\n")) {
             printf("File exist");
             if (!unlink($path . $file)) {
-                printf("Error deleting $file");
-                printf($path . $file);
+                printf("Error deleting $file\n");
+                printf($path . $file . "\n");
             } else {
-                printf("Deleted $file");
+                printf("Deleted $file\n");
                 HEADER("Location:./album.php");
             }
         } else {
-            printf("File doesn't exist");
+            printf("File doesn't exist\n");
         }
     } else {
-        printf("Il manque des informations de suppréssion");
+        printf("Il manque des informations de suppréssion\n");
     }
 }
 
