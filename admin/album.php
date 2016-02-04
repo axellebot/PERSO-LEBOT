@@ -22,9 +22,9 @@ if (!empty($_GET)) {
         if (!unlink($path . $file)) {
             echo("Error deleting $file");
             echo $path . $file;
-            HEADER("Location:./album.php");
         } else {
             echo("Deleted $file");
+            // HEADER("Location:./album.php");
         }
     } else {
         printf("Il manque des informations de suppréssion");
