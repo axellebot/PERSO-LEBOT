@@ -13,10 +13,10 @@ if (!empty($_GET)) {
 
         switch ($directory) {
             case "prod":
-                $path = "/assets/img/photos/produits/";
+                $path = "../assets/img/photos/produits/";
                 break;
             case "bat":
-                $path = "/assets/img/photos/batiments/";
+                $path = "../assets/img/photos/batiments/";
                 break;
         }
         echo $path . $file;
