@@ -16,10 +16,10 @@
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-<header id="cover" class="z-depth-1">
-    <div class="parallax-container valign-wrapper" style="z-index: 2;">
+<header id="cover">
+    <div class="parallax-container valign-wrapper">
         <div class="parallax">
-            <img src="assets/img/salad.jpg" style="z-index: 2;">
+            <img src="assets/img/salad.jpg">
         </div>
         <div class="center-align" style="width:100%;">
             <img id="logo" src="assets/img/logo.png" alt="Le Bot - Simplement frais"
