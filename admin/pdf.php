@@ -66,10 +66,11 @@ include_once "include/sidenav.html" //Menu de navigation
         </div>
     </div>
 </div>
-<?php
-include_once "../include/script-footer.html";
-?>
-<script>
+<!-- jQuery is required by some script -->
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript">
     // Initialize collapse button
     $(".button-collapse").sideNav();
     // Initialize collapsible (uncomment the line below if you use the dropdown variation)

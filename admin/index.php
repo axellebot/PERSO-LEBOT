@@ -51,9 +51,9 @@ if ($_POST != NULL) {
         </form>
     </div>
 </div>
-
-<?php
-include_once "../include/script-footer.html";
-?>
+<!-- jQuery is required by some script -->
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script type="text/javascript" src="../js/materialize.min.js"></script>
 </body>
 </html>
