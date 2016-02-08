@@ -1,6 +1,7 @@
 $(document).ready(function () {
     fullCover();
     $('.parallax').parallax();
+
     $("#btnCommander").click(function () {
         $('ul.tabs').tabs('select_tab', 'livraison');
     });
@@ -17,9 +18,6 @@ function fullCover() {
     document.getElementById("cover").style.height = height + "px";
 
     var _taille = Math.min(height, width) / 2;
-
-    console.log("hauteur -> ", height, "\nlargeur -> ", width, "\nTaille -> ", _taille);
-
 
     document.getElementById("logo").style.width = _taille + "px";
 }
