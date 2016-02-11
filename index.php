@@ -1,33 +1,42 @@
 <html lang="fr">
-<head>
+<head xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <meta charset="utf-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Presentation du restaurant dirigé par Gilles LE BOT">
 
     <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="./css/materialize.min.css">
-    <!--Import basic style.css-->
-    <link type="text/css" rel="stylesheet" href="./css/styles.css">
+    <!--Import materialize.css-->
+    <link type="text/css"
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"
+          media="screen,projection"/>
+    <!--Import style.css-->
+    <link type="text/css"
+          rel="stylesheet"
+          href="./css/styles.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="/assets/img/logo.png">
+    <link rel="icon" sizes="192x192" href="./assets/img/logo.png" alt="logo">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Le Bot">
-    <link rel="apple-touch-icon-precomposed" href="/assets/img/logo.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/img/logo.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="./assets/img/logo.png">
+    <meta name="msapplication-TileImage" content="./assets/img/logo.png" alt="logo">
     <meta name="msapplication-TileColor" content="#3372DF">
 
-    <link rel="shortcut icon" href="/assets/img/favicon.png">
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
@@ -38,23 +47,28 @@
 <body>
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
-<script>(function (d, s, id) {
+<script>
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s);
         js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <header id="cover">
     <div class="parallax-container valign-wrapper">
         <div class="parallax">
-            <img src="./assets/img/cover.jpg">
+            <img src="./assets/img/cover.jpg"
+                 alt="Logo">
+
         </div>
         <div class="center-align" style="width:100%;">
             <img id="logo"
                  class="circle responsive-img"
-                 src="./assets/img/logo.png">
+                 src="./assets/img/logo.png"
+                 alt="Logo">
         </div>
     </div>
 </header>
@@ -106,11 +120,11 @@
             <div class="row">
                 <div class="col s12 m12 l12">
 
-                    <object data="assets/pdf/menu.pdf#zoom=100" type="application/pdf" width="100%" height="1100"
+                    <object data="./assets/pdf/menu.pdf#zoom=100" type="application/pdf" width="100%" height="1100"
                             internalinstanceid="19" title="">
                         Il semblerai que votre navigateur n'arrive pas à lire le menu en pdf.<br>
                         Pas de soucis, il suffit de le télécharger ici :
-                        <a href="assets/pdf/menu.pdf">menu.pdf</a>
+                        <a href="./assets/pdf/menu.pdf">menu.pdf</a>
                     </object>
                 </div>
             </div>
@@ -145,10 +159,10 @@
                             <span class="card-title">Comment venir ?</span>
                             <p>
                                 A 2 minutes du métro Montparnasse-Bienvenue
-                                <img src="assets/img/metro-4.png"/>
-                                <img src="assets/img/metro-6.png"/>
-                                <img src="assets/img/metro-12.png"/>
-                                <img src="assets/img/metro-13.png"/> Sortie 2, continuez tout droit.
+                                <img src="./assets/img/metro-4.png"/>
+                                <img src="./assets/img/metro-6.png"/>
+                                <img src="./assets/img/metro-12.png"/>
+                                <img src="./assets/img/metro-13.png"/> Sortie 2, continuez tout droit.
                             </p>
                         </div>
                     </div>
@@ -210,7 +224,7 @@
                         <form class="col s12">
                             <div class="row">
                                 <div class="input-field col s6">
-                                    <i class="material-icons prefix">perm_identity</i>
+                                    <i class="material-icons prefix">account_circle</i>
                                     <input id="first-last_name" type="text" class="validate" required="">
                                     <label for="first-last_name">Nom et Prénom</label>
                                 </div>
@@ -292,10 +306,12 @@
         </div>
     </div>
 </footer>
-<!-- jQuery is required by some script -->
 <!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="./js/materialize.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
