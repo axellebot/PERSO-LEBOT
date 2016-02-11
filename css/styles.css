@@ -1,8 +1,5 @@
-body, html {
-    background-color: #efebe9 !important;
-}
-
 body {
+    background-color: #efebe9 !important;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -80,12 +77,6 @@ main {
     text-align: center;
 }
 
-.gallerie img {
-    width: 33%;
-    display: inline-block;
-    float: left;
-}
-
 .contact-holder {
     padding-left: 40px;
     text-align: left;
@@ -115,10 +106,6 @@ main {
     width: 100%;
 }
 
-.parallax-container .parallax img {
-    opacity: 1;
-}
-
 .row {
     display: flex;
     flex-direction: row;
@@ -129,7 +116,6 @@ main {
 @media all and (min-device-width: 750px) {
     .tabs .tab a {
         font-size: x-large;
-
     }
 }
 
